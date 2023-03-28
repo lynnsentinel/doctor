@@ -1,0 +1,102 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+
+/*# sourceMappingURL=custom.css.map */
+
+.body-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.body-login .section {
+    width: 100%;
+    padding: 25px;
+}
+
+.custom-control-label {
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+.main-content {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 60px;
+}
+
+.dropdown-menu .dropdown-title {
+    font-size: 12px !important;
+}
+.main-wrapper-1 .section .section-header {
+    margin: 0;
+    padding: 15px 10px;
+}
+
+.box-shadow-none {
+    box-shadow: none !important;
+}
+
+.section-body-full {
+    min-height: calc(100vh - 60px);
+}
+
+.section-body {
+    min-height: calc(100vh - 122px);
+}
+
+.section .section-header {
+    box-shadow: none;
+}
+
+.password_new_feed {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.link-register {
+    display: block;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.link-register:hover {
+    text-decoration: none;
+}
+
+.form-check-input, .form-check-label {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: no-drop;
+}
+
+input[type=checkbox], input[type=radio] {
+    width: 16px;
+    height: 16px;
+}
+
+.form-check-input {
+    margin-top: 0.2rem;
+}
