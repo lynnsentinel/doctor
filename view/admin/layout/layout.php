@@ -49,13 +49,13 @@
 							<li class="d-none d-lg-inline-block"><a href="admin.php" class="nav-link nav-link-lg">ผู้ดูแล</a></li>
 							<li class="dropdown dropdown-list-toggle d-none d-lg-inline-block"><a href="#" data-toggle="dropdown" class="nav-link text-bold">ข้อมูลอื่นๆ</a>
 								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item has-icon">
+									<a href="chamber.php" class="dropdown-item has-icon">
 									 ห้อง
 									</a>
-									<a href="#" class="dropdown-item has-icon">
+									<a href="doctor_title.php" class="dropdown-item has-icon">
 										 คำนำหน้าแพทย์
 									</a>
-									<a href="#" class="dropdown-item has-icon">
+									<a href="patient_title.php" class="dropdown-item has-icon">
 										 คำนำหน้าชื่อ
 									</a>
 									<!--

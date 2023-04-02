@@ -64,7 +64,9 @@
 
 			$data["admin_name"] = isset($rs["admin_name"]) ? $rs["admin_name"] : "";
 			$data["admin_email"] = isset($rs["admin_email"]) ? $rs["admin_email"] : "";
-
+			$data["admin_birthdate"] = isset($rs["admin_birthdate"]) ? $rs["admin_birthdate"] : "";
+			
+			
 						
 			if( $ret != '' ) { $ret = $ret . ',' ; } 
 			$ret = $ret . json_encode($data) ; 

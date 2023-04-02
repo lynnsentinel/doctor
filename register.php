@@ -39,6 +39,7 @@
 	</head>
 
 	<body class="body-login bg-primary">
+		
 		<section class="section">
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-5 col-xl-4 m-auto">
@@ -54,7 +55,7 @@
 						<div class="card-body">
 							<form method="POST" action="#" class="needs-validation"> <!--was-validated-->
 								<div class="row">
-									<div class="col-8 col-lg-5">
+									<div class="col-12">
 										<div class="form-group">
 											<label>คำนำหน้า</label>
 											<select id="title_name" class="form-control" tabindex="1" required>
@@ -112,6 +113,22 @@
 										</div>
 									</div>
 								</div>
+								<div class="row">
+	<div class="col-12">
+		<div class="form-group">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" id="agreement" name="agreement" required>
+				<label class="form-check-label" for="agreement">
+					ฉันยอมรับ <a href="termAndConditionOfUse.php" target="_blank">ข้อตกลงและเงื่อนไข</a> ทั้งหมด
+				</label>
+				<div class="invalid-feedback">
+					โปรดยอมรับข้อตกลงและเงื่อนไข
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 								<div class="form-group mt-5">
 									<button type="button" class="btn btn-primary btn-lg btn-block" onclick="login()">ลงทะเบียน</button>
@@ -249,5 +266,19 @@
 
 		return status;
 	}
-	
+	function validateForm() {
+		var checkBox = document.getElementById("agree");
+		if (!checkBox.checked) {
+			alert("Please agree to the terms and conditions before submitting the form.");
+			return false;
+		}
+		}
+		$('#agreement').on('change', function(){
+		if(this.checked){
+			$('#register-btn').prop('disabled', false);
+		}
+		else{
+			$('#register-btn').prop('disabled', true);
+		}
+	});
 </script>

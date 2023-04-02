@@ -18,6 +18,7 @@
     if ($security) {
 		$type = isset($_POST["type"]) ? $_POST["type"] : "";
 		$level = isset($_POST["level"]) ? $_POST["level"] : "";
+
 		if ($type == 'change') {
 
 			$u_id = isset($_SESSION["u_id"]) ? $_SESSION["u_id"] : "";
@@ -60,6 +61,7 @@
 
 			if (!empty($key)) {
 				$ref = "";
+
 				if ($level == '1') {
 					$sql = "SELECT * FROM admin WHERE u_status = '1' AND admin_email = '".$email."';";
 					$res = query($conn, $sql);
@@ -69,6 +71,7 @@
 
 						if (!empty($email) && !empty($admin_pass) && !empty($admin_birthdate)) {
 							$ref = checkSecurity($email.$admin_pass.$admin_birthdate, true);
+
 						}
 					}
 				} else if ($level == '2') {
@@ -83,8 +86,8 @@
 						}
 					}
 				}
-
 				if ($key == $ref) {
+
 					if ($level == '1') {
 						$sqlUpdate = "UPDATE admin SET admin_pass = '".$password_new2."' WHERE u_status = '1' AND admin_email = '".$email."';";
 						$res = query($conn, $sqlUpdate);
@@ -102,7 +105,7 @@
 			}
 		}
 	}
-
+	
 	if ($status == false && empty($status_detail)) {
         $status_detail = "เปลี่ยนรหัสไม่สำเร็จ";
     }

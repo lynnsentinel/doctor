@@ -13,7 +13,7 @@ $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8',
 
 // กำหนดรายละเอียดของเอกสาร pdf แสดงเมื่อคลิกขวาที่ไฟล์ PDF แล้วเลือก Document Property
 $pdf->SetCreator(PDF_CREATOR); // เครื่องมือสร้าง PDF  ค่าเริ่ม PDF_CREATOR = TCPDF
-$pdf->SetAuthor('pomchai'); // ชื่อผู้สร้างไฟล์ PDF
+$pdf->SetAuthor('PANYA'); // ชื่อผู้สร้างไฟล์ PDF
 $pdf->SetTitle('Doctor Appointment');//  กำหนด Title
 $pdf->SetSubject('Doctor Appointment'); // กำหนด Subject
 $pdf->SetKeywords('Doctor Appointment'); // กำหนด Keyword

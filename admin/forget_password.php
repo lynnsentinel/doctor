@@ -53,7 +53,7 @@
 
 								<div class="form-group">
 									<div class="d-block">
-										<label for="birth_date" class="control-label">วันเดือนปีเกิด (01/01/1900)</label>
+										<label for="birth_date" class="control-label">วันเดือนปีเกิด (MM/DD/YYYY)</label>
 									</div>
 									<input id="birth_date" type="date" class="form-control" name="birth_date" tabindex="2" placeholder="วว/ดด/ปปปป" required>
 									<div class="invalid-feedback">

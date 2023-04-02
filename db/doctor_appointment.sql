@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 21, 2023 at 03:20 PM
+-- Generation Time: Apr 02, 2023 at 12:41 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.25
 
@@ -41,7 +41,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`admin_id`, `admin_name`, `admin_email`, `admin_pass`, `admin_birthdate`, `u_status`) VALUES
-(2, 'ป้อมชัย', 'admin@admin.com', '387c2d6e4752feb581ca867e129041fc', '2023-03-01', 1);
+(2, 'te1', 'admin@admin.com', '387c2d6e4752feb581ca867e129041fc', '2023-03-01', 1);
 
 -- --------------------------------------------------------
 
@@ -74,7 +74,8 @@ INSERT INTO `appointment` (`ap_id`, `patient_id`, `doctor_id`, `ap_date`, `ap_st
 (3, 10, 5, '2023-03-09', '09:00:00', '10:00:00', 4, '', '2023-03-02 10:03:45', 1, 0, 0),
 (4, 8, 5, '2023-03-09', '10:00:00', '10:30:00', 4, '', '2023-03-10 09:39:29', 0, 0, 0),
 (5, 8, 5, '2023-03-16', '10.00-10.15', '00:00:00', 4, '', '2023-03-11 10:23:16', 0, 1, 0),
-(10, 8, 5, '2023-03-20', '10.00-10.15', '00:00:00', 4, 'ปวดฟัน', '2023-03-17 12:57:26', 0, 0, 0);
+(10, 8, 5, '2023-03-20', '10.00-10.15', '00:00:00', 4, 'ปวดฟัน', '2023-03-17 12:57:26', 0, 0, 0),
+(11, 11, 5, '2023-04-10', '12.30-12.45', '00:00:00', 4, 'ปวดฟัน', '2023-04-02 17:36:53', 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -224,8 +225,9 @@ CREATE TABLE `patients` (
 --
 
 INSERT INTO `patients` (`patient_id`, `patient_title_id`, `patient_name`, `patient_email`, `patient_pass`, `patient_birthdate`, `gender_id`, `patient_mobile`, `patient_register_date`, `p_status`) VALUES
-(8, 4, 'pomchai', 'pomchai@hotmail.com', '387c2d6e4752feb581ca867e129041fc', '2000-03-01', NULL, NULL, '2023-03-01 20:11:54', 1),
-(10, 4, 'pomchai2', 'pomchai@hotmail.com', '387c2d6e4752feb581ca867e129041fc', '2000-03-01', NULL, NULL, '2023-03-01 20:11:54', 1);
+(8, 4, 'te1', 'te1@gmail.com', '387c2d6e4752feb581ca867e129041fc', '2000-03-01', NULL, NULL, '2023-03-01 20:11:54', 1),
+(10, 4, 'te2', 'te2@hotmail.com', '387c2d6e4752feb581ca867e129041fc', '2000-03-01', NULL, NULL, '2023-03-01 20:11:54', 1),
+(11, 4, 'wwdw', 'wwww1@gmail.com', '387c2d6e4752feb581ca867e129041fc', '2010-01-02', NULL, NULL, '2023-04-02 17:36:25', 1);
 
 -- --------------------------------------------------------
 
@@ -316,7 +318,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `appointment`
 --
 ALTER TABLE `appointment`
-  MODIFY `ap_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ap_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `chamber`
@@ -346,7 +348,7 @@ ALTER TABLE `log_password`
 -- AUTO_INCREMENT for table `patients`
 --
 ALTER TABLE `patients`
-  MODIFY `patient_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `patient_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `patient_title`

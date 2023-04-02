@@ -61,6 +61,18 @@
 													<div class="row mt-5">
 														<div class="col-12">
 															<div class="form-group m-0">
+																<label for="admin_email">วันเดือนปีเกิด (MM/DD/YYYY)</label>
+																<input id="admin_birthdate" type="date" class="form-control" name="admin_birthdate" tabindex="5" required>
+																<div class="invalid-feedback">
+																	โปรดกรอกวันเดือนปีเกิด
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="row mt-5">
+														<div class="col-12">
+															<div class="form-group m-0">
 																<label for="admin_email">อีเมล์</label>
 																<input id="admin_email" type="text" class="form-control" name="admin_email" value="" required>
 															</div>
@@ -120,6 +132,8 @@
 							
 							$('#admin_name').val(e.admin_name);
 							$('#admin_email').val(e.admin_email);
+							$('#admin_birthdate').val(e.admin_birthdate);
+							
 							
 							
 						});
@@ -144,7 +158,7 @@
 			
 			let admin_name = $('#admin_name').val();
 			let admin_email = $('#admin_email').val();
-			
+			let admin_birthdate = $('#admin_birthdate').val();
 
 
 			if (admin_id != "" || admin_id == 0) {
@@ -155,6 +169,7 @@
 
 					data: {'type':'save', 'admin_id':admin_id,
 					'admin_name':admin_name,
+					'admin_birthdate':admin_birthdate,
 					'admin_email':admin_email},
 					dataType: "json",
 					beforeSend: function() { 

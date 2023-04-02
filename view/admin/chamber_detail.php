@@ -28,7 +28,7 @@
 			<div class="main-content">
 				<section class="section">
 					
-					<a href="chamber_title.php"><button type="button" class="btn btn-danger m-3">กลับไปหน้าห้อง</button></a>
+					<a href="chamber.php"><button type="button" class="btn btn-danger m-3">กลับไปหน้าห้อง</button></a>
 
 					<div class="section-body px-3 pt-0 pb-3 shadow-0">
 						<div class="row m-0">
@@ -52,7 +52,7 @@
 													<div class="row mt-5">
 														<div class="col-12">
 															<div class="form-group m-0">
-																<label for="cham_title">คำนำหน้าแพทย์</label>
+																<label for="cham_title">ห้อง</label>
 																<input id="cham_title" type="text" class="form-control" name="cham_title" value="" required>
 															</div>
 														</div>

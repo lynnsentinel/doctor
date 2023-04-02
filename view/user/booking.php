@@ -137,9 +137,9 @@
 													</div>
 												</div>
 												<div class="row mt-3">
-													<div class="col-6">
+													<div class="col-12">
 														<div class="form-group m-0">
-															<label for="time1">ตั้งแต่</label>
+															<label for="time1">เวลา</label>
 															<select id="time1" class="form-control" name="time1">
 																<?php echo $option_time; ?>
 															</select>
@@ -163,7 +163,7 @@
 												<div class="row mt-3">
 													<div class="col-12">
 														<div class="form-group m-0">
-															<label for="ap_detail">ต้องการนัดหมายเพื่อ</label>
+															<label for="ap_detail">รายละเอียดเพิ่มเติม</label>
 															<textarea name="ap_detail" id="ap_detail" cols="50" class="form-control" rows="3"></textarea>
 														</div>
 													</div>

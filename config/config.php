@@ -3,7 +3,7 @@
     function connection(){
         $host = "localhost";
         $username = "root";
-        $password ="1234";
+        $password ="";
         $dbname = "doctor_appointment"; 		
         $conn = mysqli_connect($host, $username, $password, $dbname);
         mysqli_query($conn, "SET CHARACTER SET UTF8");

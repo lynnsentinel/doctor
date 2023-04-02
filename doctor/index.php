@@ -57,9 +57,11 @@
 								<div class="form-group">
 									<div class="d-block">
 										<label for="password" class="control-label">รหัสผ่าน</label>
+										<!--
 										<div class="float-right">
 											<a href="forget_password.php" class="text-small">ลืมรหัสผ่าน?</a>
 										</div>
+										-->
 									</div>
 									<input id="password" type="password" class="form-control" name="password" tabindex="2" required>
 									<div class="invalid-feedback">

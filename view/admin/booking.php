@@ -266,7 +266,7 @@
 						dataType: "json",
 						beforeSend: function() {},
 						success: function (res) {
-							if (res.result) {
+							if (res.status) {
 								Swal.fire({
 									title: 'Delete Success',
 									icon: 'success',

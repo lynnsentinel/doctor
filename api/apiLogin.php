@@ -65,7 +65,7 @@
     } else {
         $status_detail = "Not user";
     }
-
+    
     $res = array(
 		'status' => $status,
 		'status_detail' => $status_detail
