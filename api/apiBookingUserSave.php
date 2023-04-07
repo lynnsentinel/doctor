@@ -36,7 +36,7 @@
 		$res = query($conn, $sql);
 		if ($rs = fetch_array($res)) {
 			$sql = "INSERT INTO appointment ( patient_id, doctor_id, ap_date, ap_start_time, ap_end_time, cham_id, ap_datetime_create, ap_status, ap_come, ap_detail ) ".
-								"VALUES ( '".$u_id."', '".$doctor."', '".$date."', '".$time1."', '".$time2."', '".$room."', NOW(), '0', '0', '".$ap_detail."' );";
+								"VALUES ( '".$u_id."', '".$doctor."', '".$date."', '".$time1."', '".$time2."', '".$room."', NOW(), '1', '0', '".$ap_detail."' );";
 			$res = query($conn, $sql);
 			if ($res) {
 				$status = true;

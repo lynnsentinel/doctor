@@ -1,6 +1,7 @@
 <?php 
 	include "layout/layout.php";
 	$conn = connection();
+	
 
 	$user_name = "";
 	$user_email = "";
@@ -80,7 +81,10 @@
 				<section class="section">
 					<div class="section-header">
 						<div class="col-12">
-							<h5>ทำการนัดหมายแพทย์</h5>
+							<h5>ทำการนัดหมายแพทย์.</h5>
+							<hr>
+							<h1>สวัสดี, <?php echo htmlspecialchars($_SESSION["u_name"]); ?>!</h1> 
+							
 						</div>
 					</div>
 

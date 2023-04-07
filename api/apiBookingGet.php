@@ -82,7 +82,14 @@
 			$data["patient_id"] = isset($rs["patient_id"]) ? $rs["patient_id"] : "";
 			$data["cham_id"] = isset($rs["cham_id"]) ? $rs["cham_id"] : "";
 			$data["cham_title"] = isset($rs["cham_title"]) ? $rs["cham_title"] : "";
-			$data["ap_date"] = isset($rs["ap_date"]) ? dateToPage($rs["ap_date"]) : "";
+			
+			//$data["ap_date"] = isset($rs["ap_date"]) ? dateToPage($rs["ap_date"]) : "";
+			if(isset($rs["ap_date"])){
+				$date = str_replace('-', '/', $rs["ap_date"]);	 
+				$rs["ap_date"] = (substr($date, 5, 2)."/".substr($date, 8, 10))."/".substr($date, 0, 4) ;
+			}
+			$data["ap_date"] = isset($rs["ap_date"]) ? $rs["ap_date"] : "";
+
 			$data["ap_start_time"] = isset($rs["ap_start_time"]) ? $rs["ap_start_time"] : "";
 			$data["ap_end_time"] = isset($rs["ap_end_time"]) ? $rs["ap_end_time"] : "";
 			$data["doctor_id"] = isset($rs["doctor_id"]) ? $rs["doctor_id"] : "";

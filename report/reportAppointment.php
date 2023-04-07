@@ -88,7 +88,7 @@ $htmlcontent='';
 $pdf->AddPage();
 $htmlcontent.='<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">';
 $htmlcontent.='<tr>';
-$htmlcontent.='<td width="100%"><div align="center"><b>ใบนัดผู้ป่วย</b></div></td>';
+$htmlcontent.='<td width="100%"><div align="center"><b>ใบนัดผู้ป่วย โรงพยาบาลหงส์ไทย</b></div></td>';
 $htmlcontent.='</tr>';
 $htmlcontent.='</table>';
 

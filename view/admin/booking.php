@@ -75,7 +75,7 @@
 													<thead class="bg-light">
 														<tr>
 															<!-- <th width="5%" class="text-center">ลำดับ</th> -->
-															<th width="10%" class="text-center">วันที่นัดหมาย</th>
+															<th width="10%" class="text-center">วันที่นัดหมาย<br/>(MM/DD/YYYY)</th>
 															<th width="8%" class="text-center">เวลา</th>
 															<th width="15%" class="text-center">ผู้ป่วย</th>
 															<th width="10%" class="text-center">ห้อง</th>
